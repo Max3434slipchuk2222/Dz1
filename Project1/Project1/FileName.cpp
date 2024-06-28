@@ -17,10 +17,12 @@ int main() {
 	srand(time(NULL)); 
 	SetConsoleCP(1251); 
 	SetConsoleOutputCP(1251); 
+	cout << "Введіть рядок" << endl;
+	char str[50];
+	cin.getline(str, 50);
 	char a;
 	cout << "Вкажіть слово" << endl;
 	cin >> a;
-	char str[50]; 
-	cin.getline(str, 50); 
-	
+	int rez = Kylykist(str, a);
+	cout << "Кількість слова " << a << " У рядку:" << rez << endl;
 }
