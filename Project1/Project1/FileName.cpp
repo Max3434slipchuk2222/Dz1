@@ -4,7 +4,6 @@
 #include <ctime>
 #define _CRT_SECURE_NO_WARNINGS
 using namespace std;
-
 int main() {
 	srand(time(NULL)); 
 	SetConsoleCP(1251); 
@@ -12,5 +11,7 @@ int main() {
 	char a;
 	cout << "¬каж≥ть слово" << endl;
 	cin >> a;
+	char str[50]; 
+	cin.getline(str, 50); 
 	
 }
